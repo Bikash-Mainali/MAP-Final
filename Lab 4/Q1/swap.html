@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAP Image</title>
+
+</head>
+<body>
+
+    <figure>
+        <img src="./image1.png" height="300" width="300" alt="image1" id = "image1">
+        <img src="./image2.png"  height="300" width="300"  alt="image2" id = "image2">
+    </figure>
+    <button id="swapBtn"> SWAP </button>
+    <script>
+        document.getElementById("swapBtn").onclick = function () {
+            const imageElement1 = document.getElementById("image1");
+            const imageElement2 = document.getElementById("image2");
+            imageElement1.src = './image2.png';
+            imageElement2.src = './image1.png';
+        }
+    </script>
+</body>
+</html>
