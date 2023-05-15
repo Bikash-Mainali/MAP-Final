@@ -21,3 +21,5 @@ Promise.all([
     new Promise(resolve => setTimeout(() => resolve(2), 10)), // 2 
     new Promise(resolve => setTimeout(() => resolve(3), 0)) // 3
     ]).then(console.log);
+
+

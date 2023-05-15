@@ -5,13 +5,17 @@ const isPrime = num => {
 
 }
 const getPromise = function (flag) {
-    return new Promise(function (resolve) {
-        resolve({ prime: flag });
+    return new Promise(function (resolve, reject) {
+        if(flag){
+            resolve({ prime: flag });
+        }else{
+            reject({ prime: flag });
+        }
     });
 }
 
 console.log('start');
-isPrime(7)
+isPrime(4)
     .then(res => console.log(res))
     .catch(err => console.error(err));
 console.log('end');
