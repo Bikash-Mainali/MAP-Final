@@ -1,0 +1,24 @@
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+    box-shadow: 2px 1px 2px 1px rgb(194, 149, 149);
+    margin-bottom: 30px;
+    ;
+}
+
+.image-section>div ul {
+    list-style: none;
+}
+
+#refresh {
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius:
+        10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(78, 165, 78);
+}
